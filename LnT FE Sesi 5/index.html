@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="header">
+        <nav class="navbar" id="navbar-id">
+            <input type="checkbox" id="show-menu">
+            <label for="show-menu" class="menu-icon">
+                <span>
+                    <img src="hamburger.png" alt="">
+                </span>
+            </label>
+            <div class="name-logo">
+                <img src="./name_logo.png" alt="">
+            </div>
+            <div class="nav-list">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About Me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Social Media</a>
+                </li>
+            </div>
+        </nav>
+        <div class="hero-section">
+            <h1>My name is Miracle Aurelia</h1>
+            <h3>A Web Developer</h3>
+            <button>
+                <a href="#">My Github</a>
+            </button>
+        </div>
+    </div>
+    <div class="about-container">
+        <div class="about-me">
+            <div class="self-img">
+                <div class="img-fit">
+                    <img src="./woman.jpg" alt="ini foto saya">
+
+                    <div class="circle first"></div>
+                    <div class="circle second"></div>
+                    <div class="box first"></div>
+                    <div class="box second"></div>
+                </div>
+            </div>
+            <div class="desc">
+                <h1>About Me</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus ut vero eos recusandae vitae cupiditate molestias eligendi deserunt aliquid tempora doloremque nesciunt ad iusto sed dolorem beatae sit, ab debitis.
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptates, fuga architecto odit quos earum libero eaque harum nesciunt similique mollitia officia! Velit adipisci ipsam enim minus, vitae cupiditate accusantium sunt.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="skill-container">
+        <div class="skill-title">
+            <h1>My Skills</h1>
+        </div>
+        <div class="skill-details">
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="./assets/c.png" alt="">
+                </div>
+                <h3 class="skill-name">C Language</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="./assets/htmlcssjs.png" alt="">
+                </div>
+                <h3 class="skill-name">HTML, CSS, JS</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="./assets/java.png" alt="">
+                </div>
+                <h3 class="skill-name">Java Language</h3>
+            </div>
+            <div class="skill">
+                <div class="skill-icon">
+                    <img src="./assets/python.png" alt="">
+                </div>
+                <h3 class="skill-name">Python Language</h3>
+            </div>
+        </div>
+    </div>
+
+    <div class="socmed">
+        <div class="socmed-title">
+            <h1>Follow Us</h1>
+            <h1>On Social Media</h1>
+        </div>
+        <div class="socmed-img">
+            <div class="youtube">
+                <a href="https://www.youtube.com/">
+                    <img src="./socmed_icon/utube.png" alt="">
+                </a>
+            </div>
+            <div class="instagram">
+                <a href="https://www.youtube.com/"><img src="./socmed_icon/ig.png" alt=""></a>
+            </div>
+            <div class="twitter">
+                <a href="https://www.youtube.com/"><img src="./socmed_icon/twitter.png" alt=""></a>
+            </div>
+            <div class="facebook">
+                <a href="https://www.youtube.com/"><img src="./socmed_icon/fb.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact">
+            <h1>Contact Me</h1>
+            <div class="contact-img">
+                <img src="./contact.png" alt="">
+            </div>
+            <div class="contact-form">
+                <form action="">
+                    <div class="input">
+                        <input type="text" id="name" name="name" placeholder="Your Name">
+                    </div>
+                    <div class="input">
+                        <input type="email" id="email" name="email" placeholder="Your Email">
+                    </div>
+                    <button>Send</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var navBar = document.getElementById("navbar-id");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop >= 300 || document.documentElement.scrollTop >= 300) {
+                navBar.classList.add("scrolled");
+            } else {
+                navBar.classList.remove("scrolled");
+            }
+        };
+    </script>
+</body>
+</html>
